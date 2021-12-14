@@ -19,6 +19,11 @@ class Calculator {
 
 const calculator = new Calculator();
 
-const capitalizeString = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+const capitalizeString = (str) => {
+    if (typeof str !== 'string') {
+        throw new Error("This is not a string!");
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
 module.exports = { stringLength, reverseString, calculator, capitalizeString };

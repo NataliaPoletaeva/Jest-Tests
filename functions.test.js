@@ -22,7 +22,7 @@ test('returns reversed string', () => {
     expect(reverseString('Tusa')).toBe('asuT');
 })
 
-describe("Calculator functions:", () => {
+describe('Calculator functions:', () => {
 
     test('returns the sum of two numbers', () => {
         expect(calculator.add(2, 3)).toBe(5);
@@ -50,6 +50,12 @@ describe("Calculator functions:", () => {
 
 });
 
-test('takes string as an input and returns capitalized string', () => {
-    expect(capitalizeString('cloud')).toBe('Cloud');
+describe('Capitalizing', () => {
+    test('test for non-string input', () => {
+        expect(() => capitalizeString(4)).toThrow();
+    })
+
+    test('takes string as an input and returns capitalized string', () => {
+        expect(capitalizeString('cloud')).toBe('Cloud');
+    })
 })
