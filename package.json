@@ -1,0 +1,23 @@
+{
+  "name": "jest-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NataliaPoletaeva/Jest-Tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NataliaPoletaeva/Jest-Tests/issues"
+  },
+  "homepage": "https://github.com/NataliaPoletaeva/Jest-Tests#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
